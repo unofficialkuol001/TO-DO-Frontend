@@ -49,6 +49,7 @@
     border-radius: 12px;
     color: white;
     padding: 1rem;
+    cursor: pointer;
 }
 
 .login-container form h4{
@@ -66,5 +67,10 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    cursor: pointer;
+}
 
+.social-media-icon{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    padding: 10px;
 }
