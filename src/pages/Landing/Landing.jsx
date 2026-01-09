@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react'
-import './Landing.css'
+import './landing.css'
 import {useNavigate} from 'react-router-dom'
 
 const Landing = () => {
