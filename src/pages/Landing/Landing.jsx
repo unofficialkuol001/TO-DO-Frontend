@@ -1,7 +1,15 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './Landing.css'
+import {useNavigate} from 'react-router-dom'
 
 const Landing = () => {
+    const navigate = useNavigate();
+    useEffect(()=>{
+        const timer = setTimeout(()=>{
+            navigate('/login')
+        },3000)
+        return () => clearTimeout(timer)
+    },[navigate]);
 
     return (
         <div className={'landing-section'}>
@@ -9,4 +17,4 @@ const Landing = () => {
         </div>
     )
 }
-export default Landing
+export default Landing;
