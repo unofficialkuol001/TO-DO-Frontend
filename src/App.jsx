@@ -1,10 +1,11 @@
-
+import Landing from './pages/Landing/Landing.jsx'
+import Login from './pages/Login/Login.jsx'
 
 const App = () => {
   
   return (
     <div>
-        <h1>Hello world</h1>
+        <Login />
     </div>
   )
 }
