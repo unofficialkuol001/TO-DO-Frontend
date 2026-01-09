@@ -1,0 +1,45 @@
+.Home {
+    display: grid;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    padding: 15px;
+}
+
+.Home-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.Home span{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.Home span input{
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.Home span input:focus{
+    border: 1px solid grey;
+    padding: 10px;
+    outline: none;
+}
+
+.Home span button{
+    border: 1px solid grey;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
