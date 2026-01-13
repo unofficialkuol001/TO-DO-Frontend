@@ -3,7 +3,8 @@ import './Home.css'
 
 const Home = () => {
     const [tasks, setTasks] = useState('');
-    const addTask = async ()=>{
+    const addTask = async (e)=>{
+        e.preventDefault();
         const res = await fetch("http://localhost:3000/todo/app/addTask",{
             method: "POST",
             headers: {"Content-Type": "application/json"},
@@ -12,7 +13,7 @@ const Home = () => {
         if(!res.ok){
             console.log("error");
         }
-        const data = res.json();
+        const data = await res.json();
         console.log(data);
     }
     return (
@@ -30,4 +31,4 @@ const Home = () => {
         </div>
     )
 }
-export default Home
+export default Home;
